@@ -1,10 +1,16 @@
 import React from 'react';
 import './css/TopBar.css'; 
+import fillphoto from './assets/filller.png';
 
-const TopBar = () => {
+const TopBar = ({ toggleSidebar }) => {
   return (
     <div className="topBar">
-      <span className="topBarBrand">Your Brand</span>
+      <button className="closeSideBar" onClick={toggleSidebar}>
+        <img className="closeImg" src={fillphoto} alt="Close Sidebar" />
+      </button>
+
+      <span className="topBarBrand">MelindaUTEC</span>
+
     </div>
   );
 }

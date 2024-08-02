@@ -16,7 +16,10 @@ const Main = () => {
     }
 
     return (
+        
         <div className="Main">
+
+
             <img className="tinyUtecLogo" src={utec} alt="" />
             <div className="topRowPrograms">
                 <button className="latamfest1" onClick={() => navigateToRoute('/latamfest1')}>
@@ -41,6 +44,7 @@ const Main = () => {
                 </div>
             </div>
         </div>
+    
     );
 }
 

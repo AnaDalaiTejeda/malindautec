@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { Outlet } from 'react-router-dom';
 import SideBar from './components/SideBar';
-import TopBar from './components/TopBar';
 import './Layout.css'; 
+import TopBar from './components/TopBar';
 
 
 const Layout = () => {
@@ -12,7 +12,7 @@ const Layout = () => {
   }
   return (
     <div className="layout">
-       <TopBar />
+      <TopBar/>
       <SideBar isVisible={isSidebarVisible}  toggleSidebar={toggleSidebar} />
       <div className="main-content">
         <Outlet />

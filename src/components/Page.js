@@ -35,6 +35,8 @@ function Page({ description, backgroundColor}) {
 
     return (
         <div className="Box" style={{ backgroundColor }}>
+
+
             <img className="utecLogo" src={utec} alt="" />
             <div className="generalChats">
                 {message.map((message, i) =>

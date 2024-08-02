@@ -13,17 +13,6 @@ const SideBar = ({isVisible, toggleSidebar}) => {
       <div className={`SideBar ${isVisible ? 'visible' : 'hidden'}`}>
       <div className='upperSide'>
 
-        <div className= "topbuttons">
-          <button className = "closeSideBar" onClick = {toggleSidebar}>
-            <img className='closeImg' src={fillphoto} alt=""/>
-          </button>
-        </div>
-
-        <div className='upperSideTop'>
-          {/* <img src={gptLogo} alt='Logo' className='logo' /> */}
-          <span className='brand'>Melinda??</span>
-        </div>
-
         <div className= "options">
           <button className='home' onClick={() => navigateToRoute('/')} >
             <img src={fillphoto} alt='' className='homeIcon' />

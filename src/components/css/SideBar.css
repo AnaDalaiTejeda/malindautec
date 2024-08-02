@@ -5,38 +5,17 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease;
 }
 .SideBar.hidden {
     display: none;
   }
 
-.topbuttons{
-    display: flex;
-    justify-content :end;  
-}
-.closeSideBar{
-    background: none;
-    border: none;
-    cursor: pointer; 
-    padding-bottom: 1.5rem; 
-}
-
-.closeImg{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 15rem;
-    background: transparent;
-    border: none; 
-}
 
 .logo{
     margin-right: 1rem;
     width: 40px; 
     height: 40px; 
-}
-
-.brand{
-    font-size: 2rem;
 }
 
 .upperSide{
@@ -45,7 +24,7 @@
 
 }
 .options{
-    margin-top: 3rem;
+    margin-top: 5rem;
     overflow:hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;

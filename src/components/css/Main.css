@@ -1,0 +1,117 @@
+.Main{
+    flex-grow:1;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+
+.tinyUtecLogo{
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 25rem; 
+}
+
+.topRowPrograms{
+    align-items:center ;
+    align-items: center;
+    max-width: 100rem;
+}
+.latamfest1, .latamfest2, .latamfest3, .latamfest4{
+    width: 20rem;
+    height: 13rem;
+    border-radius: 3rem;
+    margin: 1rem;
+    border-color: transparent;
+    cursor: pointer; 
+}
+.latamfest1 img, .latamfest2 img, .latamfest3 img, .latamfest4 img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.chats{
+    overflow:hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width:100%;
+    max-width: 80rem;
+    height: calc(100vh-17rem) ;
+}
+
+.chats::-webkit-scrollbar {
+    display: none;
+}
+
+
+.chats {
+    scrollbar-width: none;
+}
+
+
+.chats {
+    -ms-overflow-style: none;
+}
+
+.chat{
+    background: rgb(200, 200, 200);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding:1rem 2rem;
+    font-size: 1.25rem;
+    display:flex;
+    align-items: flex-start;
+    text-align: justify;
+    max-width: 80rem;
+}
+
+.chatImg{
+    object-fit: cover;
+    width: 3.5rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+}
+
+.bot{
+    background:rgba(76, 109, 128,1) ;
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+.chatFooter{
+    margin-top:auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;   
+}
+.inp{
+    padding: 0.75rem;
+    margin-bottom: 4rem;
+    background: rgb(200, 200, 200);
+    display:flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width:80rem; 
+}
+
+.inp>input{
+    flex-grow: .98;
+    width: calc(100%-3rem);
+    outline:none;
+    padding:1.5rem;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.inp>input, .send{
+    background: transparent;
+    border: none; 
+}
+
+

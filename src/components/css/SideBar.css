@@ -1,0 +1,112 @@
+.SideBar {
+    width: 28rem;
+    background-color: rgb(200, 200, 200); /* Add background color for visibility */
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.SideBar.hidden {
+    display: none;
+  }
+
+.topbuttons{
+    display: flex;
+    justify-content :end;  
+}
+.closeSideBar{
+    background: none;
+    border: none;
+    cursor: pointer; 
+    padding-bottom: 1.5rem; 
+}
+
+.closeImg{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 15rem;
+    background: transparent;
+    border: none; 
+}
+
+.logo{
+    margin-right: 1rem;
+    width: 40px; 
+    height: 40px; 
+}
+
+.brand{
+    font-size: 2rem;
+}
+
+.upperSide{
+    height: 80%;
+    padding:2rem;
+
+}
+.options{
+    margin-top: 3rem;
+    overflow:hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.upperSideTop{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+
+
+
+.home, .explore, .history{
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer; 
+    padding: 0; 
+}
+
+.homeIcon, .exploreIcon,.historyIcon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 15rem;
+    background: transparent;
+    border: none; 
+}
+
+.homeText, .exploreText, .historyText{
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 1.5rem;
+}
+
+
+.lowerSide{
+    height: 11.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.aboutUs, .contactUs{
+    background: none;
+    cursor: pointer;    
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border-color: transparent;
+    margin-bottom: .5rem;
+
+}
+.aboutUsText, .contactUsText{
+    font-size: 1rem;
+    color: white;   
+}
+
+

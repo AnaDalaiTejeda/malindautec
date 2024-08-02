@@ -1,0 +1,92 @@
+.Box{
+    flex-grow:1;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.utecLogo{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 25rem; 
+}
+
+.generalChats{
+    overflow:hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width:100%;
+    max-width: 80rem;
+    height: calc(100vh-17rem) ;
+}
+
+
+.generalChats::-webkit-scrollbar {
+    display: none;
+}
+.generalChats {
+    scrollbar-width: none;
+}
+
+.generalChats {
+    -ms-overflow-style: none;
+}
+
+.generalChat{
+    background: rgb(200, 200, 200);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding:1rem 2rem;
+    font-size: 1.25rem;
+    display:flex;
+    align-items: flex-start;
+    text-align: justify;
+    max-width: 80rem;
+}
+
+.generalChatImg{
+    object-fit: cover;
+    width: 3.5rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+}
+
+.generalbot{
+    background:rgba(76, 109, 128,1) ;
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+.generalChatFooter{
+    margin-top:auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;   
+}
+.generalInp{
+    padding: 0.75rem;
+    margin-bottom: 4rem;
+    background: rgb(200, 200, 200);
+    display:flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width:80rem; 
+}
+.generalInp>input{
+    flex-grow: .98;
+    outline:none;
+    padding:1.5rem;
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.generalInp>input, .generalsend{
+    background: transparent;
+    border: none; 
+}

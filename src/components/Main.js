@@ -2,50 +2,59 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/Main.css';
 import sendBtn from './assets/send.svg';
-import utec from './assets/utec-logo1.png';
-import latam from './assets/latamfest.png';
+import fillerImg from './assets/filller.png';
 
 
 const Main = () => {
-    const [input] = useState('');
+    const [input, setInput] = useState('');
     const navigate = useNavigate();
+
+
+    const handleChange = (e) => {
+        setInput(e.target.value);
+    }
 
 
     const navigateToRoute = (route) => {
         navigate(route);
     }
 
+
     return (
-        
+       
         <div className="Main">
 
 
-            <img className="tinyUtecLogo" src={utec} alt="" />
             <div className="topRowPrograms">
-                <button className="latamfest1" onClick={() => navigateToRoute('/latamfest1')}>
-                    <img src={latam} alt="" />
+                <button className="mainbutton" onClick={() => navigateToRoute('/latamfest1')}>
+                    <img src={fillerImg} alt="" />
                 </button>
-                <button className="latamfest2" onClick={() => navigateToRoute('/latamfest2')}>
-                    <img src={latam} alt="" />
+                <button className="subbuttonleft" onClick={() => navigateToRoute('/latamfest2')}>
+                    <img src={fillerImg} alt="" />
                 </button>
-                <button className="latamfest3" onClick={() => navigateToRoute('/latamfest3')}>
-                    <img src={latam} alt="" />
+                <button className="subbuttonmiddle" onClick={() => navigateToRoute('/latamfest3')}>
+                    <img src={fillerImg} alt="" />
                 </button>
-                <button className="latamfest4" onClick={() => navigateToRoute('/latamfest4')}>
-                    <img src={latam} alt="" />
+                <button className="subbuttonright" onClick={() => navigateToRoute('/latamfest4')}>
+                    <img src={fillerImg} alt="" />
                 </button>
             </div>
 
 
             <div className="chatFooter">
                 <div className="inp">
-                    <input type="text" placeholder='Send a message...' value={input} onClick={() => navigateToRoute('/general')} />
+                    <input type="text" placeholder='Send a message...' value={input} onChange={handleChange} />
                     <button className="send" ><img src={sendBtn} alt="Send" /></button>
                 </div>
             </div>
         </div>
-    
+   
     );
 }
 
+
 export default Main;
+
+
+
+

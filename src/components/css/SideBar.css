@@ -1,14 +1,19 @@
 .SideBar {
     width: 28rem;
-    background-color: rgb(200, 200, 200); /* Add background color for visibility */
-    min-height: 100vh;
+    background-color: rgb(200, 200, 200); 
+    height: 100vh;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, width 0.3s ease; 
+    position: fixed; 
+    left: 0;
+    top: 0;
 }
 .SideBar.hidden {
-    display: none;
+    transform: translateX(-100%); 
+    width: 0;
+    overflow: hidden;
   }
 
 
@@ -21,10 +26,9 @@
 .upperSide{
     height: 80%;
     padding:2rem;
-
 }
 .options{
-    margin-top: 5rem;
+    margin-top: 7rem;
     overflow:hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -37,17 +41,22 @@
 }
 
 
-
-
 .home, .explore, .history{
-    margin-bottom: 3rem;
-    margin-left: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
     display: flex;
     align-items: center;
-    background: none;
+    background-color:transparent;
     border: none;
     cursor: pointer; 
-    padding: 0; 
+    width: 22rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.home:hover, .explore:hover, .history:hover{
+    background-color: rgb(220,220,220);
 }
 
 .homeIcon, .exploreIcon,.historyIcon{
@@ -76,12 +85,17 @@
 .aboutUs, .contactUs{
     background: none;
     cursor: pointer;    
-    width: 15rem;
-    height: 2rem;
+    width: 25rem;
+   
     border-radius: 1rem;
     border-color: transparent;
     margin-bottom: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
+.aboutUs:hover, .contactUs:hover{
+    background-color: rgb(220,220,220);
 }
 .aboutUsText, .contactUsText{
     font-size: 1rem;

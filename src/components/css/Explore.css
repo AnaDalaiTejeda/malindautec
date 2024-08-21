@@ -1,0 +1,150 @@
+.Explore {
+    /* height: 100vh; */
+    flex-grow: 1;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  
+  .searchAI {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+  
+  .searchInp {
+    padding: 0.75rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    border: 2px solid #000;
+    width: 60rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  
+  .searchInp > input {
+    margin-left: 1rem;
+    width: 60rem; 
+    outline: none;
+    color: black;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: inherit; 
+  }
+  
+  .searchInp > img {
+    background: transparent;
+    border: 2px solid #000;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 15rem;
+  }
+  
+  .goToTab{
+    align-self: flex-start;
+    margin-left: calc(50% - 30rem);
+   
+  }
+
+  .goToButton{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.25rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: transparent;
+    font-family: inherit; 
+  }
+
+  .goToButton:hover{
+    background-color: rgb(240,240,240);
+  }
+
+  .box {
+    margin-top: 17rem;
+    background-color: transparent;
+    width: 60rem;
+    margin-bottom: 50rem;
+  }
+
+  .subBox {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%; 
+    box-sizing: border-box;
+    gap:.5rem;
+}
+.heading{
+    margin-bottom: 1rem;
+}
+  .subject1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .subject1text{
+    font-size: 1.25rem;
+  }
+
+  .exploreAI{
+        display: flex;
+        align-items: center;
+        background-color:transparent;
+        width: 29rem;
+        height: 8rem;
+        border-radius: 2rem;
+        padding: 0 2rem;
+        border: none;  
+        background-color:transparent;
+        transition: background-color 0.3s ease;
+  }
+
+  .exploreAI:hover {
+    background-color: rgb(240,240,240);
+}
+.littleIcon{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 15rem;
+    background: transparent;
+    margin-right: 1.5rem;
+    border: 2px black; 
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    flex-grow: 1; 
+}
+
+.miniTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.miniDescription {
+    font-size: 1rem;
+    color: black; 
+}
+

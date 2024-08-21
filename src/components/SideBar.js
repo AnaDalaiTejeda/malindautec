@@ -3,7 +3,7 @@ import './css/SideBar.css';
 import fillphoto from './assets/filller.png'
 import { useNavigate } from 'react-router-dom';
 
-const SideBar = ({isVisible, toggleSidebar}) => {
+const SideBar = ({isVisible}) => {
   const navigate = useNavigate();
   const navigateToRoute = (route) => {
     navigate(route);

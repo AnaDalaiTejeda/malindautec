@@ -1,32 +1,76 @@
 .topBar {
     width: 100%;
-    height: 60px;
-    background-color:transparent;
+    height: 4rem;
+    background-color: transparent;
     color: rgb(94, 94, 94);
-    justify-content: space-between;
     position: fixed;
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
   }
   
   .topBarBrand {
     font-size: 2rem;
-    padding-left: 25rem;
+    padding-left: 2.5rem;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
   }
 
   .closeSideBar{
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+    background: transparent;
+    cursor: pointer; 
+    padding-bottom: 1.5rem; 
+    border:none;
+    
+}
+
+.closeImg{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 15rem;
+    border: 2px solid rgb(200, 200, 200);
+    background: transparent;
+     
+}
+.newChat{
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer; 
+    padding-bottom: 1.5rem;   
+    transition: transform 0.3s ease; 
+}
+.newChatImg{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 15rem;
+    border: 2px solid rgb(200, 200, 200);
+    background: transparent;
+}
+
+.closeRightSideBar{
+    margin-top: 2.5rem;
+    margin-left: auto;
     background: none;
     border: none;
     cursor: pointer; 
     padding-bottom: 1.5rem; 
+    padding-right:3rem;
 }
-
-.closeImg{
+.closeRightImg{
     width: 3rem;
     height: 3rem;
     border-radius: 15rem;
     background: transparent;
-    border: none; 
+    border: none
 }
+.shift .topBarBrand {
+    transform: translateX(15.5rem); 
+  }
 
+.shift .newChat {
+    transform: translateX(15.5rem); 
+  }

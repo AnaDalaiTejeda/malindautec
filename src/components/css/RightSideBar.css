@@ -1,0 +1,11 @@
+.rightSideBar{
+    width: 28rem;
+    background-color: rgb(200, 200, 200); 
+    min-height: 100vh;
+    /* position: absolute; */
+    right: 0;
+    top: 0;
+}
+/* .RightSideBar.hidden {
+    display:none
+  } */
